@@ -1,0 +1,299 @@
+{
+  "shell": {
+    "maximizePanel": "Развернуть панель",
+    "restorePanel": "Восстановить размер панели",
+    "closeInspector": "Закрыть инспектор"
+  },
+  "artifact": {
+    "previousVersionAria": "Предыдущая версия",
+    "nextVersionAria": "Следующая версия",
+    "downloadAria": "Скачать",
+    "downloadScript": "Скачать скрипт",
+    "inputsLabel": "Входные данные",
+    "noExecutionLog": "Журнал выполнения отсутствует.",
+    "noMessages": "Для этой версии нет сообщений.",
+    "noEnvironmentInfo": "Сведения об окружении отсутствуют.",
+    "reviewPassed": "Проверка пройдена: {{version}} связана с кодом и входными данными.",
+    "reviewNotPassed": "{{version}} ещё не прошла проверку.",
+    "tabs": {
+      "Code": "Код",
+      "Execution Log": "Журнал выполнения",
+      "Messages": "Сообщения",
+      "Environment": "Окружение",
+      "Review": "Проверка"
+    }
+  },
+  "notebook": {
+    "title": "Блокнот",
+    "sharedWithAgent": "Общий с агентом",
+    "live": "В реальном времени",
+    "outputLabel": "> результат",
+    "running": "выполняется…",
+    "sentToKernel": "→ отправлено в ядро агента",
+    "localOnly": "(локальное ядро доступно только в настольном приложении)",
+    "kernelError": "ошибка ядра: {{message}}",
+    "exprPlaceholder": "Введите выражение и нажмите Enter",
+    "exprAria": "Выражение блокнота",
+    "runAria": "Выполнить выражение"
+  },
+  "provenance": {
+    "loadingHistory": "Загрузка истории…",
+    "emptyPrefix": "Версий пока нет. Каждый раз, когда агент записывает",
+    "emptySuffix": ", здесь добавляется версия с кодом, моделью и разговором, в котором она создана.",
+    "envTitle": "Окружение, в котором создана эта версия",
+    "lockfileTitle": "Посмотреть сохранённый файл pip freeze этой версии",
+    "packageCount_one": "{{count}} пакет",
+    "packageCount_few": "{{count}} пакета",
+    "packageCount_many": "{{count}} пакетов",
+    "packageCount_other": "{{count}} пакета",
+    "pipFreezePrefix": "pip freeze · ",
+    "reproduce": "Воспроизвести",
+    "reproduceRunTitle": "Подготовить запрос на повторный запуск, создавший этот файл, и сравнение результатов",
+    "reproduceVersionTitle": "Подготовить запрос на повторное выполнение кода этой версии и сравнение результата",
+    "openConversation": "Открыть разговор",
+    "openConversationTitle": "Открыть разговор, в котором создана эта версия",
+    "loadingLockfile": "Загрузка…",
+    "openRunTitle": "Открыть этот запуск в разделе «Запуски»",
+    "producedByRunPrefix": "Создано запуском",
+    "commandSeparator": " — ",
+    "producedByRunSuffix": ". Этот файл получен при выполнении кода; «Воспроизвести» повторяет команду и сравнивает результат.",
+    "contentNotCaptured": "Содержимое этой версии не сохранено (записан двоичный файл или только различия при редактировании)."
+  },
+  "filePreview": {
+    "historyAria": "История",
+    "historyTitle": "История: все записанные версии с кодом и разговором",
+    "openExternally": "Открыть во внешнем приложении",
+    "openExternallyTitle": "Открыть в приложении по умолчанию",
+    "tabs": {
+      "preview": "Просмотр",
+      "code": "Код"
+    },
+    "loading": "Загрузка {{filename}}…",
+    "desktopOnly": "Просмотр доступен в настольном приложении.",
+    "sourceDesktopOnly": "Исходный код доступен в настольном приложении.",
+    "binaryNoPreview": "Двоичный файл нельзя просмотреть здесь. Откройте его во внешнем приложении.",
+    "artifactKind": {
+      "figure": "рисунок",
+      "script": "скрипт",
+      "report": "отчёт",
+      "table": "таблица",
+      "notebook": "блокнот",
+      "model": "модель",
+      "data": "данные"
+    },
+    "htmlPreviewTitle": "Просмотр HTML",
+    "pdfPreviewTitle": "Просмотр PDF",
+    "tableView": {
+      "table": "Таблица",
+      "chart": "График"
+    },
+    "tooLarge": "{{filename}} слишком велик для просмотра",
+    "tooLargeBody": "Размер просмотра ограничен, чтобы большой файл не остановил приложение. Исследуйте файл без полной загрузки: инструмент large-file читает схему, размеры, образец и основные показатели потоково. Или откройте файл в системном приложении.",
+    "inspectWithoutLoading": "Исследовать без загрузки",
+    "pointer": {
+      "format": "Формат",
+      "size": "Размер",
+      "gzipped": "(gzip)",
+      "approxRows": "Строки (примерно)",
+      "rows": "Строки",
+      "approxReads": "Прочтения (примерно)",
+      "approxSequences": "Последовательности (примерно)",
+      "approxVariants": "Варианты (примерно)",
+      "columns": "Столбцы",
+      "readLength": "Длина прочтения",
+      "readLengthValue": "{{min}}–{{max}} (среднее {{mean}})",
+      "samples": "Образцы",
+      "schema": "Схема",
+      "datasets": "Наборы данных",
+      "sampleIds": "Идентификаторы образцов"
+    },
+    "mobileNoPreview": "Этот тип файла нельзя просмотреть здесь. Скачайте его.",
+    "download": "Скачать",
+    "waitingWorkspace": "Ожидание рабочей области для загрузки {{filename}}… (выберите сессию, которой принадлежит файл)"
+  },
+  "office": {
+    "rendering": "Отрисовка…",
+    "docxRenderError": "Не удалось отобразить документ: {{message}}",
+    "xlsxReadError": "Не удалось прочитать книгу: {{message}}",
+    "pptxRenderError": "Не удалось отобразить презентацию: {{message}}",
+    "noSheets": "В книге нет листов.",
+    "truncatedPrefix": "Сокращённый просмотр · ",
+    "embeddedChartsNote": "Встроенные диаграммы не отображаются."
+  },
+  "table": {
+    "showingFirstRows_one": "Показано первых строк: {{count}}",
+    "showingFirstRows_few": "Показано первых строк: {{count}}",
+    "showingFirstRows_many": "Показано первых строк: {{count}}",
+    "showingFirstRows_other": "Показано первых строк: {{count}}"
+  },
+  "mesh": {
+    "mode": {
+      "shaded": "С заливкой",
+      "wireframe": "Каркас"
+    },
+    "modelViewerAria": "Просмотр 3D-модели {{filename}}",
+    "resetView": "Сбросить вид",
+    "triangleCount_one": "{{formatted}} треугольник",
+    "triangleCount_few": "{{formatted}} треугольника",
+    "triangleCount_many": "{{formatted}} треугольников",
+    "triangleCount_other": "{{formatted}} треугольника",
+    "rendering": "Отрисовка модели…",
+    "fileProblem": "Проблема с файлом",
+    "noGeometry": "В 3D-файле нет видимой геометрии: экспорт неполон или повреждён.",
+    "unsupportedFormat": "Неподдерживаемый 3D-формат: .{{ext}}",
+    "badge3D": "3D"
+  },
+  "fits": {
+    "readError": "Не удалось прочитать FITS-файл: {{error}}.",
+    "colormap": {
+      "magma": "magma",
+      "viridis": "viridis",
+      "gray": "серый"
+    },
+    "stretch": {
+      "linear": "линейная",
+      "log": "логарифмическая",
+      "asinh": "asinh"
+    },
+    "hoverHintImage": "наведите указатель для просмотра значения пикселя и небесных координат",
+    "pixelValue": "пиксель ({{x}}, {{y}}) = {{value}}",
+    "value": "значение",
+    "axisSampleFallback": "отсчёт",
+    "spectrumSummary_one": "спектр · {{count}} отсчёт",
+    "spectrumSummary_few": "спектр · {{count}} отсчёта",
+    "spectrumSummary_many": "спектр · {{count}} отсчётов",
+    "spectrumSummary_other": "спектр · {{count}} отсчёта",
+    "hoverHintSpectrum": "наведите указатель для просмотра отсчёта"
+  },
+  "genome": {
+    "notAnnotationFile": "Это не файл аннотации генома.",
+    "noFeaturesFound": "В файле {{format}} не найдено элементов.",
+    "contigAria": "Контиг",
+    "featureCount": "Элементы: {{count}}",
+    "zoomIn": "Приблизить",
+    "zoomOut": "Отдалить",
+    "resetView": "Сбросить вид",
+    "strandLabel": "цепь {{strand}}",
+    "featureLabel": "элемент",
+    "scoreLabel": "оценка {{score}}",
+    "panZoomHint": "Перетаскивание — перемещение · прокрутка — масштаб",
+    "showingRows": " · показано строк: {{shown}} из {{total}}",
+    "truncatedNotice": " · файл ограничен 50 000 элементов"
+  },
+  "molecule": {
+    "style": {
+      "stick": "Стержни",
+      "sphere": "Сферы",
+      "cartoon": "Ленты"
+    },
+    "moleculeViewerAria": "Просмотр 3D-молекулы {{filename}}",
+    "notChemicalFile": "Это не файл химической структуры.",
+    "noStructuresFound": "В файле не найдено химических структур.",
+    "resetView": "Сбросить вид",
+    "atomCount_one": "{{count}} атом",
+    "atomCount_few": "{{count}} атома",
+    "atomCount_many": "{{count}} атомов",
+    "atomCount_other": "{{count}} атома",
+    "renderingStructure": "Отрисовка структуры…",
+    "badge3D": "3D"
+  },
+  "dos": {
+    "readError": "Не удалось прочитать DOSCAR: {{error}}.",
+    "unknownFormat": "неизвестный формат",
+    "viewLabel": "DOS",
+    "pointCount_one": "{{count}} точка",
+    "pointCount_few": "{{count}} точки",
+    "pointCount_many": "{{count}} точек",
+    "pointCount_other": "{{count}} точки",
+    "spinPolarizedSuffix": " · спиновая поляризация",
+    "axisToggle": {
+      "relative": "E − E_F",
+      "absolute": "абсолютная E"
+    },
+    "axisLabel": {
+      "relative": "E − E_F (эВ)",
+      "absolute": "Энергия (эВ)"
+    },
+    "yAxisLabel": "DOS (состояний/эВ)",
+    "spinUpLabel": "↑ спин вверх",
+    "spinDownLabel": "↓ спин вниз",
+    "emptyHint": "Уровень Ферми E_F · наведите указатель для просмотра точки"
+  },
+  "band": {
+    "readError": "Не удалось прочитать EIGENVAL: {{error}}.",
+    "unknownFormat": "неизвестный формат",
+    "viewLabel": "зоны",
+    "bandCount_one": "{{count}} зона",
+    "bandCount_few": "{{count}} зоны",
+    "bandCount_many": "{{count}} зон",
+    "bandCount_other": "{{count}} зоны",
+    "kpointCount_one": "{{count}} k-точка",
+    "kpointCount_few": "{{count}} k-точки",
+    "kpointCount_many": "{{count}} k-точек",
+    "kpointCount_other": "{{count}} k-точки",
+    "spinPolarizedSuffix": " · спиновая поляризация",
+    "spinUpShort": "вверх",
+    "spinDownShort": "вниз",
+    "kpointIndexAxis": "индекс k-точки (0…{{max}})",
+    "energyAxis": "Энергия (эВ)",
+    "hoverHint": "наведите указатель для просмотра k-точки и энергии"
+  },
+  "phase": {
+    "readError": "Не удалось прочитать фазовую диаграмму: {{error}}.",
+    "unknownFormat": "неизвестный формат",
+    "phaseCount_one": "{{count}} фаза",
+    "phaseCount_few": "{{count}} фазы",
+    "phaseCount_many": "{{count}} фаз",
+    "phaseCount_other": "{{count}} фазы",
+    "stableCount": "Стабильные: {{count}}",
+    "xAxisLabel": "состав (доля {{element}})",
+    "yAxisLabel": "энергия образования (эВ/атом)",
+    "stableOnHull": "стабильная (на выпуклой оболочке)",
+    "aboveHull": "+{{value}} эВ/атом над оболочкой",
+    "hoverDefaultHint": "наведите указатель на фазу · закрашенная = стабильная, полая = метастабильная"
+  },
+  "anomaly": {
+    "readError": "Не удалось прочитать сетку аномалий: {{error}}.",
+    "unknownFormat": "неизвестный формат",
+    "gridLabel": "сетка",
+    "hoverHint": "наведите указатель для просмотра ячейки",
+    "noData": "нет данных"
+  },
+  "qcode": {
+    "readError": "Не удалось прочитать файл кодирования: {{error}}.",
+    "unknownFormat": "неизвестный формат",
+    "sourceCount_one": "{{count}} источник",
+    "sourceCount_few": "{{count}} источника",
+    "sourceCount_many": "{{count}} источников",
+    "sourceCount_other": "{{count}} источника",
+    "codeCount_one": "{{count}} код",
+    "codeCount_few": "{{count}} кода",
+    "codeCount_many": "{{count}} кодов",
+    "codeCount_other": "{{count}} кода",
+    "exactSpansBadge": "цитаты точно соответствуют фрагментам источника",
+    "exactSpansTitle": "Выделены точные фрагменты источника: цитаты извлечены из него, а не сгенерированы.",
+    "codebookHeading": "Кодировочная книга",
+    "clearFilter": "сбросить фильтр",
+    "warningsCount_one": "Пропущена или отмечена {{count}} аннотация:",
+    "warningsCount_few": "Пропущены или отмечены {{count}} аннотации:",
+    "warningsCount_many": "Пропущено или отмечено {{count}} аннотаций:",
+    "warningsCount_other": "Пропущено или отмечено {{count}} аннотации:",
+    "hoverDefaultHint": "наведите указатель на выделение для просмотра кодов · нажмите код для отбора фрагментов"
+  },
+  "tableChart": {
+    "chartType": {
+      "line": "линейный",
+      "bar": "столбчатый",
+      "scatter": "точечный"
+    },
+    "rowIndexOption": "№ строки",
+    "rowLabel": "строка",
+    "xAxisFieldLabel": "x:",
+    "toggleSeries": {
+      "hide": "Скрыть ряд",
+      "show": "Показать ряд"
+    },
+    "selectSeriesHint": "выберите ряд для построения графика",
+    "noNumericColumns": "Нет числовых столбцов для графика."
+  }
+}

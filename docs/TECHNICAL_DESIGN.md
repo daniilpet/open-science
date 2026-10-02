@@ -77,6 +77,22 @@ large-Markdown render; on-demand figures; cached artifact previews; a unified ag
 event bus; all heavy work off to sidecar / worker; the Tauri main process does system
 capabilities only, not heavy computation.
 
+### 4.4 Interface localization
+
+The desktop and gateway web UI use i18next and react-i18next with eight bundled
+languages: English, Simplified Chinese, Japanese, Spanish, German, French, Korean,
+and Russian. `apps/desktop/src/i18n/config.ts` registers selectable locales; regional
+tags resolve to a shipped base language, so `ru-RU` selects `ru`. English is the
+fallback. Settings → Appearance → Language exposes the switcher, and the selected
+locale is stored in localStorage under `ai4s.locale`; without a saved preference,
+the OS/browser language seeds the selection.
+
+Each locale provides eight namespaces: `common`, `nav`, `settings`, `runs`,
+`session`, `inspector`, `errors`, and `pages`. Russian count-dependent strings use
+the `one`, `few`, `many`, and `other` forms. The i18n tests check locale resolution,
+saved-preference detection, namespace key parity, and Russian plurals with count
+interpolation; LocaleProvider tests check language switching and HTML attributes.
+
 ## 5. Agent runtime
 
 ### 5.1 Choice: OpenCode (bundled)
