@@ -68,6 +68,15 @@ import koInspector from "./locales/ko/inspector.json";
 import koErrors from "./locales/ko/errors.json";
 import koPages from "./locales/ko/pages.json";
 
+import ruCommon from "./locales/ru/common.json";
+import ruNav from "./locales/ru/nav.json";
+import ruSettings from "./locales/ru/settings.json";
+import ruRuns from "./locales/ru/runs.json";
+import ruSession from "./locales/ru/session.json";
+import ruInspector from "./locales/ru/inspector.json";
+import ruErrors from "./locales/ru/errors.json";
+import ruPages from "./locales/ru/pages.json";
+
 export const NAMESPACES = [
   "common", "nav", "settings", "runs", "session", "inspector", "errors", "pages",
 ] as const;
@@ -80,6 +89,7 @@ const resources = {
   de: { common: deCommon, nav: deNav, settings: deSettings, runs: deRuns, session: deSession, inspector: deInspector, errors: deErrors, pages: dePages },
   fr: { common: frCommon, nav: frNav, settings: frSettings, runs: frRuns, session: frSession, inspector: frInspector, errors: frErrors, pages: frPages },
   ko: { common: koCommon, nav: koNav, settings: koSettings, runs: koRuns, session: koSession, inspector: koInspector, errors: koErrors, pages: koPages },
+  ru: { common: ruCommon, nav: ruNav, settings: ruSettings, runs: ruRuns, session: ruSession, inspector: ruInspector, errors: ruErrors, pages: ruPages },
 } as const;
 
 void i18n.use(initReactI18next).init({

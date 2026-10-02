@@ -8,9 +8,9 @@ import {
 } from "./config";
 
 describe("locale registry", () => {
-  it("ships exactly the 7 first-batch locales, in order", () => {
+  it("ships the supported locales, in order", () => {
     expect(shippedLocales().map((l) => l.code)).toEqual([
-      "en", "zh-Hans", "ja", "es", "de", "fr", "ko",
+      "en", "zh-Hans", "ja", "es", "de", "fr", "ko", "ru",
     ]);
   });
 
@@ -42,6 +42,7 @@ describe("resolveLocale", () => {
     expect(resolveLocale("en-GB")).toBe("en");
     expect(resolveLocale("zh-CN")).toBe("zh-Hans");
     expect(resolveLocale("fr-CA")).toBe("fr");
+    expect(resolveLocale("ru-RU")).toBe("ru");
   });
 
   it("never resolves to an unshipped locale", () => {
